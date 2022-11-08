@@ -2,6 +2,52 @@
 
 }
 #avatar{
-    width: 100px;
-    height: 100px;
+    width: 50%;
+    height: auto;
+}
+.creditos{
+   
+}
+footer{
+
+
+}
+
+.card{
+    background-color: rgb(152, 151, 151);
+    margin-bottom: 50px;
+}
+.izquierda{
+float: left;
+
+}
+
+.derecha{
+   float: right; 
+  
+}
+.botones{
+    display: flex;
+    flex-direction: row-reverse;
+}
+.boton1{
+    margin: 5px;
+    border-radius: 100%;
+    height: 15px;
+    width: 15px;
+    background-color: #F01717;
+}
+.boton2{
+    margin: 5px;
+    border-radius: 100%;
+    height: 15px;
+    width: 15px;
+    background-color: #0665F4;
+}
+.boton3{
+    margin: 5px;
+    border-radius: 100%;
+    height: 15px;
+    width: 15px;
+    background-color: #17F0BC;
 }
