@@ -1,0 +1,52 @@
+.red{
+
+    width: 10%;
+   
+    margin: 20px; 
+ 
+   
+
+}
+
+.paraAnimacion{
+   
+   
+   
+   
+   /* animacion el color entra por la izquierda xsegundos */
+   
+} 
+
+.redes:hover{
+    border-radius: 40px;
+    /* background: rgb(75,113,132); */
+    /* background: linear-gradient(90deg, rgba(75,113,132,1) 0%, rgba(255,255,255,1) 100%); */
+    animation: colorIzquierda 2s linear forwards;
+    
+  
+}
+.paraAnimacion:hover ~ .redes{
+    
+}
+
+
+@keyframes colorIzquierda {
+   
+        
+        
+    
+    0%{
+
+      
+        background: rgb(75,113,132);
+        background: linear-gradient(90deg, rgba(75,113,132,1) 0%, rgba(255,255,255,1) 10%);
+    }
+
+    
+    100%{
+
+      
+        background: rgb(75,113,132);
+        background: linear-gradient(90deg, rgba(75,113,132,1) 100%, rgba(255,255,255,1) 0%);
+    }
+}

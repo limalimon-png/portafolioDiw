@@ -17,8 +17,12 @@ footer{
     background-color: rgb(152, 151, 151);
     margin-bottom: 50px;
 }
+
+#menu{
+  display: flex;
+}
 .izquierda{
-float: left;
+margin-left: auto;
 
 }
 
@@ -74,10 +78,18 @@ float: left;
     border-radius: 100%;
 }
 
-@media only screen and (min-width: 900px) {
-    body {
-      /* background-image:url("../img/desktop.jpg"); */
-    }
+.fondodesk{
+  background-color: red;
+  border: 1px solid red;
+  height: 100%;
+  width: 100%;
+}
+@media only screen and (min-width: 800px) {
+  .fondodesk{
+    /* background-image: url(../img/desktop.jpg); */
+    
+    background-color: #050d18;
+  }
   }
 
 /* drgtfd */
