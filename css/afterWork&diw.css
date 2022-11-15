@@ -1,0 +1,8 @@
+.card{
+    transition: ;
+}
+
+.card:hover{
+background-color: aliceblue;
+
+}
