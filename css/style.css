@@ -15,19 +15,23 @@ footer{
 
 .card{
     background-color: rgb(152, 151, 151);
-    margin-bottom: 50px;
+    margin-bottom: auto;
 }
 
 #menu{
   display: flex;
+  flex-direction: column;
 }
 .izquierda{
-margin-left: auto;
+position: absolute;
+left: 20%;
 
 }
 
 .derecha{
-   float: right; 
+  position: absolute;
+  right: 20%;
+  clear: left;
   
 }
 .botones{
@@ -83,12 +87,18 @@ margin-left: auto;
   border: 1px solid red;
   height: 100%;
   width: 100%;
+  position: relative;
 }
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 576px) {
   .fondodesk{
-    /* background-image: url(../img/desktop.jpg); */
-    
-    background-color: #050d18;
+    background-image: url(../img/desktop2.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  padding-left: 12%;
+  padding-right: 12%;
+  padding-top: 2%;
+
+    /* background-color: #050d18; */
   }
   }
 
