@@ -23,15 +23,17 @@ footer{
   flex-direction: column;
 }
 .izquierda{
-position: absolute;
-left: 20%;
+/* position: absolute;
+left: 20%; */
+margin-left: auto;
 
 }
 
 .derecha{
-  position: absolute;
+  /* position: absolute;
   right: 20%;
-  clear: left;
+  clear: left; */
+  margin-right: auto;
   
 }
 .botones{
@@ -83,7 +85,7 @@ left: 20%;
 }
 
 .fondodesk{
-  background-color: red;
+  /* background-color: red; */
   border: 1px solid red;
   height: 100%;
   width: 100%;
@@ -91,6 +93,8 @@ left: 20%;
 }
 @media only screen and (min-width: 576px) {
   .fondodesk{
+    min-height: 300px;
+  width: 100%;
     background-image: url(../img/desktop2.jpg);
   background-size: 100%;
   background-repeat: no-repeat;
@@ -100,66 +104,57 @@ left: 20%;
 
     /* background-color: #050d18; */
   }
+  .card{
+    width: 140px;
+      height: 95px;
+      margin-top: 15px;
+  }
   }
 
+
+
+  @media only screen and (min-width: 768px) {
+    .fondodesk{
+       min-height: 400px;
+   
+    }
+
+    .card{
+      width: 240px;
+        height: 150px;
+        margin-top: 10px;
+    }
+    }
+
+
+    @media only screen and (min-width: 992px) {
+      .fondodesk{
+         min-height: 560px;
+   
+      }
+  
+      .card{
+        width: 340px;
+        height: 200px;
+        margin-top: 20px;
+      }
+      }
+
+
+      @media only screen and (min-width: 1200px) {
+        .fondodesk{
+           max-height: 800px;
+           background-size: 1000px 600px;
+           background-position-x: center;
+     
+        }
+    
+        .card{
+          max-width: 470px;
+          max-height: 280px;
+          margin-top: 30px;
+        }
+        }
+
 /* drgtfd */
-  /*--------------------------------------------------------------
-# Resume
---------------------------------------------------------------*/
-.resume .resume-title {
-    font-size: 26px;
-    font-weight: 700;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    color: #050d18;
-  }
-  
-  .resume .resume-item {
-    padding: 0 0 20px 20px;
-    margin-top: -2px;
-    border-left: 2px solid #1f5297;
-    position: relative;
-  }
-  
-  .resume .resume-item h4 {
-    line-height: 18px;
-    font-size: 18px;
-    font-weight: 600;
-    text-transform: uppercase;
-    font-family: "Poppins", sans-serif;
-    color: #050d18;
-    margin-bottom: 10px;
-  }
-  
-  .resume .resume-item h5 {
-    font-size: 16px;
-    background: #e4edf9;
-    padding: 5px 15px;
-    display: inline-block;
-    font-weight: 600;
-    margin-bottom: 10px;
-  }
-  
-  .resume .resume-item ul {
-    padding-left: 20px;
-  }
-  
-  .resume .resume-item ul li {
-    padding-bottom: 10px;
-  }
-  
-  .resume .resume-item:last-child {
-    padding-bottom: 0;
-  }
-  
-  .resume .resume-item::before {
-    content: "";
-    position: absolute;
-    width: 16px;
-    height: 16px;
-    border-radius: 50px;
-    left: -9px;
-    top: 0;
-    background: #fff;
-    border: 2px solid #1f5297;
-  }
+ 
