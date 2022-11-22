@@ -41,14 +41,18 @@
             <nav id="menu" class="mt-4 container">
 
                 <div class="row ">
-                    <div class="col-xs-12 col-sm-6">
-                        <div class="card izquierda" style=" min-width: 10rem">
-                            <a href="html/about.html" style="text-decoration: none;">
+
+
+                       <!-- &times -->
+                    <div class="col-xs-12 col-sm-6 ">
+                        <button class="ocultar" id="boton">Abrir</button>
+                        <div class="card izquierda reaparecer" style=" min-width: 10rem" >
+                            <a href="html/about.html"onclick = "comprobarRedireccion(event)" style="text-decoration: none;">
                                 <div class="botones">
 
                                     <div class="boton1"></div>
-                                    <div class="boton2"></div>
-                                    <div class="boton3" onclick="minimizarMaximizar(this)"></div>
+                                    <div class="boton2" onclick="minimizarMaximizar(this)"></div>
+                                    <div class="boton3"></div>
                                 </div>
                                 <div class="card-body">
                                     <h5 class="card-title text-center">About</h5>
@@ -57,6 +61,7 @@
                         </div>
 
                     </div>
+        
 
                     <div class="col-xs-12 col-sm-6">
                         <div class="card derecha" style="  min-width: 10rem">
@@ -118,7 +123,7 @@
 
 
     </div>
-    <!-- <script src="js/animacion.js"></script> -->
+     <script src="js/animacion.js"></script> 
     <script>
         //  document.querySelectorAll("*").forEach(function(elemento){elemento.style.border="1px solid red"})
     </script>

@@ -165,3 +165,16 @@ margin-left: auto;
   margin-top: -30px;
 
 }
+
+
+/**********************************************************
+seccion
+*/
+.ocultar{
+  visibility: hidden;
+  display: none;
+}
+.reaparecer{
+  visibility: visible;
+  display: block;
+}
