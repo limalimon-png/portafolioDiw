@@ -174,7 +174,23 @@ seccion
   visibility: hidden;
   display: none;
 }
+.ocultarlento{
+  opacity: 2;
+  animation: ocultarLento2 2s linear;
+}
+@keyframes ocultarLento2 {
+  100%{
+    opacity: 0;
+  }
+  
+}
 .reaparecer{
   visibility: visible;
   display: block;
+}
+
+#imgMinimizar{
+  width: 40px;
+  height: 40px;
+  transform: rotate(-90deg);
 }
