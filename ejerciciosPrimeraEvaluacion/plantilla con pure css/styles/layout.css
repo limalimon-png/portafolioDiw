@@ -1,0 +1,14 @@
+.cuerpo{
+    max-width: 960px;
+    margin:auto;
+}
+
+.columna{
+    max-width: 290px ;
+    margin: auto;
+ 
+}
+.izquierda{
+    align-items: flex-start;
+}
+

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title></title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="baraja">
+    <div class="carta" id="card1" name="uno"  onclick="girarCarta(this);">
+      <div class="anverso"></div>
+      <div class="reverso"></div>
+    </div>
+
+    <div class="carta" id="card2" name="uno"  onclick="girarCarta(this);">
+      <div class="anverso"></div>
+      <div class="reverso"></div>
+    </div>
+    <div class="carta" id="card3" name="dos"  onclick="girarCarta(this);">
+      <div class="anverso"></div>
+      <div class="reverso"></div>
+    </div>
+    <div class="carta" id="card4" name="dos"  onclick="girarCarta(this);">
+      <div class="anverso"></div>
+      <div class="reverso"></div>
+    </div>
+    <div class="carta" id="card5" name="tres" onclick="girarCarta(this);">
+      <div class="anverso"></div>
+      <div class="reverso"></div>
+    </div>
+    <div class="carta" id="card6" name="tres" onclick="girarCarta(this);">
+      <div class="anverso"></div>
+      <div class="reverso"></div>
+    </div>
+</div>
+    <script>
+      var carta = null;
+
+      function compararCarta(cartaNueva) {
+        if (carta == null) {
+          carta = cartaNueva;
+          return;
+        }
+
+        if (
+          cartaNueva.attributes["name"].value == carta.attributes["name"].value
+        ) {
+          //marcar ambas cartas como correctas
+          carta.classList.add("correcta");
+          cartaNueva.classList.add("correcta");
+        } else {
+          //quitamos la clase girada
+          carta.classList.remove("girada");
+          cartaNueva.classList.remove("girada");
+        }
+        carta = null;
+      }
+
+      /**
+       * @param {HTMLElement} cartaNueva - The date
+       */
+      function girarCarta(cartaNueva) {
+        if (!cartaNueva.classList.contains("girada")) {
+          cartaNueva.classList.add("girada");
+          //OJO. si pongo compararCarta(cartaNueva) se ejecuta directamente, si lo piensas tiene sentido.
+          setTimeout(compararCarta, 500, cartaNueva);
+        }
+      }
+    </script>
+  </body>
+</html>

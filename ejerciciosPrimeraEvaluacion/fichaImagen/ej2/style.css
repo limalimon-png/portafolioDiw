@@ -1,0 +1,44 @@
+.centrar{
+    margin: 0 auto;
+    margin-top: 35%;
+    width: 200px;
+    height: 300px;
+    align-items: center;
+    padding: 15px;
+    border-radius: 5px;
+    background-color: black;
+    color: aliceblue;
+    text-align: center;
+  
+    
+    
+}
+.centrar:hover .contenido{
+
+    margin-top: 0px;
+    opacity: 1;
+}
+.contenido{
+    margin-top: 150px;
+    opacity: 0;
+
+    
+    transition: all 4s;
+}
+
+.centrar img{
+    padding: 10%;
+    width: 150px;
+    height: auto;
+   
+}
+
+img{
+ 
+}
+
+img:hover{
+ 
+}
+
+

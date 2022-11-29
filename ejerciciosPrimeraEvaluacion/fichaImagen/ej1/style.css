@@ -1,0 +1,191 @@
+#container{
+    display: flex;
+    flex-direction: row;
+}
+
+
+.centrar1{
+    margin: auto;
+    margin-top: 10%;
+    width: 200px;
+    height: 300px;
+    align-items: center;
+    padding: 15px;
+    border-radius: 5px;
+    background-color: black;
+    color: aliceblue;
+    text-align: center;
+    background-image: url("../dron2.png");
+    background-position: top;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    transition: background-size 2s;
+
+    
+    
+}
+
+.centrar1:hover{
+    background-size: 120%;
+}
+
+.contenido1{
+margin-top: 80%;
+}
+.centrar1 img{
+    padding: 10%;
+    width: 150px;
+    height: auto;
+   
+}
+
+.contenido1 h3{
+    font-family:  'Arial Narrow Bold';
+    font-style: italic;
+}
+
+/* style 2*/
+.centrar2{
+    margin: auto;
+    margin-top: 10%;
+    width: 200px;
+    height: 300px;
+    align-items: center;
+    padding: 15px;
+    border-radius: 5px;
+    background-color: black;
+    color: aliceblue;
+    text-align: center;
+  overflow: hidden;
+    
+    
+}
+.centrar2:hover .contenido2{
+
+    margin-top: 0px;
+    opacity: 1;
+}
+.contenido2{
+    margin-top: 150px;
+    opacity: 0;
+
+    
+    transition: all 4s;
+}
+
+.centrar2 img{
+    padding: 10%;
+    width: 150px;
+    height: auto;
+   
+}
+.contenido1 img{
+    padding: 10%;
+    width: 50px;
+    height: auto;
+}
+
+.contenido2 img{
+    padding: 10%;
+    width: 50px;
+    height: auto;
+}
+.contenido3 img{
+    padding: 10%;
+    width: 50px;
+    height: auto;
+}
+
+/*style 3*/
+.centrar3{
+    margin: auto;
+    margin-top: 10%;
+    width: 200px;
+    height: 300px;
+    align-items: center;
+    padding: 15px;
+    border-radius: 5px;
+    background-color: black;
+    color: aliceblue;
+    text-align: center;
+    overflow: hidden;
+  
+    
+    
+}
+.centrar3:hover .contenido3{
+
+    margin-top: 0px;
+    opacity: 1;
+}
+.contenido3{
+    margin-top: 150px;
+    opacity: 0;
+    transition: all 4s;
+}
+
+.centrar3 img{
+    padding: 10%;
+    width: 150px;
+    height: auto;
+   
+}
+
+
+
+.centrar3 img:active{
+    top: 400px;
+    transition: 4s;
+   
+}
+
+
+
+
+
+.centrar3 img{
+    position: relative;
+    top: 0px;
+    opacity: 1;
+    transition: transform 3s;
+   
+}
+
+.centrar3 img:hover{
+    transform: scale(2);
+}
+
+.centrar3 h3{
+
+transition: transform 2s;
+transform: scale3d(1,1,1);
+}
+
+.centrar3 h3:hover::after{
+    transition: transform 2s;
+    transform: scale3d(1,1,1);
+}
+.centrar3 h3:hover{
+    transform: scale3d(-1.4, 0.4, 0.7);
+}
+
+.centrar3 button{
+    transition: transform 2s;
+   
+}
+
+.centrar3 button:active{
+   transform: matrix(0, 1, 1, 0, 0, 0);
+}
+
+
+
+.centrar3 h4:hover{
+transform: rotate(360deg);
+
+}
+.centrar3 h4{
+    transition: transform 2s;
+}
+
+

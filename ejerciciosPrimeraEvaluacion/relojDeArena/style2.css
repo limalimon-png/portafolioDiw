@@ -1,0 +1,104 @@
+/* Reloj de arena que da dos vueltas despacio
+se mueve muy despacion en ujn tramo de la segunda vuelta
+y despues termina la segunda vuielta normal
+
+tenemos una barra de progreso  que sube hasta un 80 porciento 
+pasando por azul amarillo y naranja
+en ese 80% es el momento en el que la barra baja al 20% rojo y el re
+loj de arena se mueve despacio
+despues subimos al 90% reloj de arena velocidad normal
+y llega al 100% cuando termina el reloj 
+y convertimos en el ultimo 0.1% en verde*/
+
+.centrar{
+  margin: 0 auto;
+  text-align: center;
+}
+#relojArena {
+
+  width: 50px;
+
+  animation: rota 5s forwards;
+  animation-timing-function: linear;
+
+
+}
+
+.barra {
+  border: 1px solid black;
+  border-radius: 50px;
+  height: 50px;
+  width: 200px;
+  overflow: hidden;
+}
+
+.interior {
+
+
+  width: 20%;
+  height: 100%;
+  animation: progres 5s linear forwards;
+
+}
+
+
+
+
+/* derecha abajo izquierda */
+@keyframes progres {
+
+  0% {
+    width: 0%;
+    background-color: blue;
+  }
+
+  40% {
+    background-color: yellow;
+  }
+
+  70% {
+    width: 80%;
+    background-color: orange;
+  }
+
+  80% {
+    width: 20%;
+    background-color: red;
+  }
+
+  99.9% {
+    background-color: green;
+  }
+
+  100% {
+    width: 100%;
+    background-color: green;
+  }
+
+
+
+
+
+
+}
+
+
+
+
+@keyframes rota {
+
+  70% {
+    rotate: 500deg;
+  }
+
+  80% {
+    rotate: 530deg;
+  }
+
+  100% {
+    rotate: 720deg;
+  }
+
+
+
+}

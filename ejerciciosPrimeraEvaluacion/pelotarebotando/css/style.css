@@ -1,0 +1,193 @@
+body{
+    background-image: url(../img/mediau.jpg) ;
+    background-size: 70% auto;
+    background-repeat: no-repeat;
+}
+
+#pelota{
+
+    position: absolute;
+    
+    width: 50px;
+    height: auto ;
+
+    top: 50px; 
+   
+    left: 723px; 
+   
+    
+    animation: jugar 7s linear forwards; 
+    
+
+    
+}
+
+
+@keyframes jugar {
+
+
+
+    25%{
+
+        top: 470px;
+    left: 723px; 
+
+    }
+
+
+    27%{
+        top: 500px;
+    left: 717px; 
+
+    }
+
+    29%{
+        top: 520px;
+    left: 710px; 
+    }
+
+
+    31%{
+        top: 540px;
+    left: 700px; 
+    }
+    33%{
+        top: 550px;
+    left: 690px; 
+    }
+
+
+    35%{
+        top: 560px;
+    left: 680px; 
+    }
+    
+    37%{
+        top: 570px;
+    left: 670px; 
+    }
+   
+
+    39%{
+        top: 580px;
+        left: 660px; 
+    }
+    41%{
+        top: 590px;
+        left: 650px; 
+
+    } 
+    43%{
+        top: 600px;
+        left: 640px; 
+
+    } 
+    44%{
+        top: 605px;
+        left: 635px; 
+
+    } 
+    
+    45.5%{
+        top: 610px;
+        left: 630px; 
+
+    } 
+    46.6%{
+        top: 615px;
+        left: 625px; 
+
+    } 
+    47.5%{
+        top: 620px;
+        left: 620px; 
+
+    }
+    
+    48.8%{
+        top: 625px;
+        left: 615px; 
+
+    } 
+    
+    49.5%{
+        top: 627px;
+        left: 610px; 
+
+    }
+    50.9%{
+        top: 630px;
+        left: 605px; 
+
+    } 
+
+    51.8%{
+        top: 633px;
+        left: 600px; 
+
+    } 
+    52.6%{
+        top: 635px;
+        left: 595px; 
+
+    } 
+
+
+    53.6%{
+        top: 637px;
+        left: 590px; 
+
+    } 
+    
+    54.5%{
+        top: 640px;
+        left: 585px; 
+
+    } 
+    55.5%{
+        top: 643px;
+        left: 580px; 
+
+    } 
+    56.8%{
+        top: 646px;
+        left: 575px; 
+
+    } 
+    58%{
+        top: 649px;
+        left: 570px; 
+
+    } 
+
+    59%{
+        top: 652px;
+        left: 565px; 
+
+    } 
+    60%{
+        top: 655px;
+        left: 560px; 
+
+    } 
+    61%{
+        top: 657px;
+        left: 555px; 
+
+    } 
+
+
+    
+    
+    
+  
+   
+80%{left:430px;}
+
+90%{left:380px;}
+    100%{
+        rotate: -2000deg;
+        top: 660px;
+        left: 350px;
+    }
+}

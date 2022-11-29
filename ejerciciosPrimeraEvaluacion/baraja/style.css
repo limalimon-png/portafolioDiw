@@ -1,0 +1,140 @@
+
+
+/*
+  /////////////////////////////////////////////////////////*/
+  
+.baraja{
+  width: 10in;
+  margin:0 auto;
+
+}
+
+.carta {
+  border-radius: 15px;
+  opacity: 0.7;
+  display: inline-block;
+
+  position: relative;
+  overflow: hidden;
+  width: 2.5in;
+  height: 3.5in;
+  transition: all 0.5s;
+  margin: 0;
+}
+
+
+.carta > div{
+  width: 2.5in;
+  height: 3.5in;
+position: absolute;
+top: 0;
+left: 0;
+  
+  
+}
+
+#card1 .anverso,#card2 .anverso{
+  background: url('./carta.png');
+  background-size: cover;
+  transform: rotateY(180deg);
+  
+}
+#card3 .anverso,#card4 .anverso{
+  background: url('./as.jpg');
+  background-size: cover;
+  transform: rotateY(180deg);
+  
+}
+
+#card5 .anverso,#card6 .anverso{
+  background: url('./atras.jpg');
+  background-size: cover;
+  transform: rotateY(180deg);
+  
+}
+
+
+#card1 .reverso, #card2 .reverso,#card3 .reverso, #card4 .reverso,#card5 .reverso, #card6 .reverso{
+   background: url('./reverso.png'); 
+  background-size: cover;
+
+}
+
+
+
+
+#card1 .anverso,#card2 .anverso{
+  background: url('./carta.png');
+  background-size: cover;
+  /* transform: rotateY(180deg); */
+  
+}
+
+
+
+
+
+.carta {
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+
+
+
+/* reverso y anverso  */
+
+
+.reverso {
+  z-index: 10;
+  transition: all 0.5s;
+}
+
+.anverso {
+  z-index: 0;
+  transition: all 0.5s;
+}
+
+
+
+
+/* #card2:hover .anverso, #card1:hover .anverso,#card3:hover .anverso,#card4:hover .anverso,#card5:hover .anverso,#card6:hover .anverso{
+  transform: rotateY(360deg);
+  z-index: 10;
+}
+#card2:hover .reverso,#card1:hover .reverso,#card3:hover .reverso,#card4:hover .reverso,#card5:hover .reverso,#card6:hover .reverso{
+  transform: rotateY(180deg);
+  z-index: 0;
+} */
+
+
+
+.carta:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+
+.girada .anverso  {
+  opacity: 1;
+  transform: rotateY(180deg);
+}
+
+.girada .anverso {
+  z-index: 10;
+}
+
+.girada .reverso {
+  z-index: 0;
+}
+
+.carta.girada:hover {
+  cursor: default;
+}
+
+.girada {
+  opacity: 1;
+  transform: rotateY(180deg);
+}
+
+
+

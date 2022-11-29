@@ -1,0 +1,12 @@
+.cuerpo{
+    max-width: 960px;
+    margin:auto;
+}
+
+.columna{
+    max-width: 290px ;
+    margin: auto;
+}
+.content{
+    padding: 0;
+}

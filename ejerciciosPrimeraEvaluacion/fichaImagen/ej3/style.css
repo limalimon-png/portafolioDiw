@@ -1,0 +1,89 @@
+.centrar{
+    margin: 0 auto;
+    margin-top: 35%;
+    width: 200px;
+    height: 300px;
+    align-items: center;
+    padding: 15px;
+    border-radius: 5px;
+    background-color: black;
+    color: aliceblue;
+    text-align: center;
+  
+    
+    
+}
+.centrar:hover .contenido{
+
+    margin-top: 0px;
+    opacity: 1;
+}
+.contenido{
+    margin-top: 150px;
+    opacity: 0;
+    transition: all 4s;
+}
+
+.centrar img{
+    padding: 10%;
+    width: 150px;
+    height: auto;
+   
+}
+
+
+
+img:active{
+    top: 400px;
+    transition: 4s;
+   
+}
+
+
+
+
+
+img{
+    position: relative;
+    top: 0px;
+    opacity: 1;
+    transition: transform 3s;
+   
+}
+
+img:hover{
+    transform: scale(2);
+}
+
+h3{
+
+transition: transform 2s;
+transform: scale3d(1,1,1);
+}
+
+h3:hover::after{
+    transition: transform 2s;
+    transform: scale3d(1,1,1);
+}
+h3:hover{
+    transform: scale3d(-1.4, 0.4, 0.7);
+}
+
+button{
+    transition: transform 2s;
+   
+}
+
+button:active{
+   
+}
+
+
+
+h4:hover{
+transform: rotate(360deg);
+
+}
+h4{
+    transition: transform 2s;
+}

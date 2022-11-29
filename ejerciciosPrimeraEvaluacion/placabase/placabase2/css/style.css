@@ -1,0 +1,102 @@
+
+
+
+.componentes{
+    
+    width: 200px;
+    height: auto;
+}
+
+
+
+
+#placa{
+    
+    position: absolute;
+    margin:auto;
+    top: 150px;
+    left: 150px;
+    right: 150px;
+    bottom: 150px;
+  width: 400px;
+  
+ 
+ 
+
+}
+
+@keyframes prueba {
+    
+   
+
+        
+    
+    
+    
+    
+}
+#cpu{
+   position: absolute;
+    top: 5px;
+   left: 5px;
+   transition: all 4s; 
+ 
+  
+   
+}
+
+#grafica{
+    position: absolute;
+   top: 5px;
+   right: 20px;
+   transition: all 5s;
+   
+}
+#fuente{
+    position: absolute;
+     top: 600px;
+    left: 15000px;
+    transition: all 5s; 
+    
+}
+#ram{
+    position: absolute;
+    top: 600px;
+    left: 5px;
+    transition: all 5s;
+
+   
+    
+}
+
+#cpu:hover{
+    top: 34%;
+    left: 45%;
+    rotate: 340deg;
+    scale: 0.4;
+    transform:matrix(1.00,0.20,0.00,1.00,0,0);
+    
+   
+}
+
+#grafica:hover{
+    top: 62%;
+   right: 47%;
+   transform:matrix(1.00,0.20,-2.00,1.00,0,0);
+      
+   }
+
+   #ram:hover{
+    top: 43%;
+    left: 49%;
+   
+    
+    transform:matrix(-0.02,-1.00,0.60,-0.01,0,0);
+      
+   }
+   #fuente:hover{
+     
+    top: 30%;
+    left: 56%;
+    rotate: 100deg;
+   }

@@ -1,0 +1,63 @@
+.carta {
+    border-radius: 15px;
+    overflow: hidden;
+    width: 2.5in;
+    height: 3.5in;
+    transition: all 0.5s;
+}
+
+
+.carta > div{
+    width: 2.5in;
+    height: 3.5in;
+    position: absolute;
+    top:0;
+    left: 0;
+  }
+
+.carta .anverso{
+    background: url('./carta.png');
+    background-size: cover;
+    transform: rotateY(180deg);
+    
+}
+.carta .reverso{
+     background: url('./reverso.png'); 
+    background-size: cover;
+
+}
+
+
+
+.carta {
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+
+
+
+/* reverso y anverso  */
+
+
+.reverso {
+    z-index: 10;
+    transition: all 0.5s;
+}
+
+.anverso {
+    z-index: 0;
+    transition: all 0.5s;
+}
+
+
+
+
+  .carta:hover .anverso{
+    transform: rotateY(360deg);
+    z-index: 10;
+  }
+  .carta:hover .reverso{
+    transform: rotateY(180deg);
+    z-index: 0;
+  }
