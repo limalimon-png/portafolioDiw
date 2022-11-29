@@ -1,0 +1,95 @@
+.escena {
+    position: relative;
+    width: 1000px;
+    height: 500px;
+    background-color: aquamarine;
+    overflow: hidden;
+}
+
+
+
+.coche {
+    width: 90px;
+    height: 90px;
+    transform: rotateY(180deg);
+    background-image: url(./img/coche.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+
+    top: 200px;
+    left: 20px;
+
+    animation: conducir 3s forwards linear;
+}
+
+.tronco {
+    width: 200px;
+    height: 90px;
+    background-image: url(./img/arbol-tronco.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+  
+
+
+    top: 200px;
+    left: 600px;
+}
+
+.copa {
+    background-image: url(./img/arbol-copa.png);
+    width: 200px;
+    height: 90px;
+   
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    
+
+
+    top: 110px;
+    left: 633px;
+
+    animation: volar 1s forwards linear;
+    animation-delay: 3s;
+}
+
+
+.fuego {
+    background-image: url(./img/fuego.gif);
+
+    width: 200px;
+    height: 90px;
+    
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+  
+    top: 160px;
+    left: 640px;
+    opacity: 0;
+    animation: fueguito 1s forwards;
+    animation-delay: 3s;
+}
+
+
+@keyframes conducir {
+    100%{
+        left: 615px;
+    }
+}
+
+@keyframes volar {
+    100%{
+        top:-200px
+    }
+    
+}
+
+
+@keyframes fueguito {
+    100%{
+        opacity: 1;
+    }
+}
