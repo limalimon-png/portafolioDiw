@@ -115,3 +115,40 @@
 .resume-item{
    
   }
+
+  .redes img{
+    cursor: pointer;
+  }
+
+  .redes{
+    margin-bottom: 10%;
+  }
+
+
+
+  .fixedButton{
+    position: fixed;
+    bottom: 0px;
+    right: 0px; 
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    
+}
+.roundedFixedBtn{
+  height: 60px;
+ 
+  /* line-height: 50%;   */
+  width: 60px;  
+  font-size: 2em;
+  font-weight: bold;
+  border-radius: 50%;
+  background-color: #0f1f0cbd;
+  color: white;
+  margin: 0;
+  
+  
+  cursor: pointer;
+}
