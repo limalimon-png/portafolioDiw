@@ -1,5 +1,5 @@
 var about=1;
-function minimizarMaximizar(a){
+function ocultar(a){
     about=0;
 //     document.getElementById("s").classList.add
 //     let card=a.parentElement.parentElement;
@@ -34,12 +34,46 @@ boton.parentElement.children[1].classList.add("reaparecer")
 // }
 
 
-function minimizar(){
+function minimizar(a){
     about=0;
+    a.parentElement.parentElement.parentElement.classList.add("minimizar")
+a.parentElement.parentElement.parentElement.classList.remove("reaparecer")
+
+// a.parentElement.parentElement.previousSibling.previousSibling.classList.add("reaparecer")
+// a.parentElement.parentElement.previousSibling.previousSibling.classList.remove("ocultar")
+// document.getElementById("").parentElement.childNodes
+a.parentElement.parentElement.parentElement.parentElement.children[0].classList.add("reaparecer")
+a.parentElement.parentElement.parentElement.parentElement.children[0].classList.remove("ocultar");
+
+}
+
+function matrix(a){
+    document.getElementsByClassName("fondodesk").item(0).style.background="transparent"
+    document.body.style.background="url('img/matrix.gif')";
+
+    document.body.style.backgroundColor="black"
+    $(" h1,h5").css({'color':'yellow'});
+    $(".card").css({'background-color':'transparent'});
+   
+
+    about=0;
+   
 }
 function comprobarRedireccion(event){
 if(about!=1){
     event.preventDefault();
     about=1;
 }
+}
+
+
+function enlace(direccion){
+    if(about!=1){
+        event.preventDefault();
+        event.stopPropagation();
+        about=1;
+    }else{
+        
+        location.href="html/"+direccion+".html"
+    }
 }

@@ -1,135 +1,145 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"
+    />
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/style.css">
-
-
+    <script
+      src="https://code.jquery.com/jquery-3.6.3.min.js"
+      integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU="
+      crossorigin="anonymous"
+    ></script>
     <title>Portafolio de Guillermo</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <script src="bootstrap/js/bootstrap.min.js"></script>
     <div class="container">
-        <!-- <section id="hero" class="d-flex flex-column justify-content-center align-items-center">
+      <!-- <section id="hero" class="d-flex flex-column justify-content-center align-items-center">
             <div class="hero-container" data-aos="fade-in">
               <h1>Alex Smith</h1>
               <p>I'm <span class="typed" data-typed-items="Designer, Developer, Freelancer, Photographer"></span></p>
             </div>
           </section> End Hero  -->
 
+      <div id="entrada" class="text-center mt-5">
+        <h1>Desarrollador multiplataforma y desarrollador web =)</h1>
+        <img
+          src="img/avatar-removebg-preview.png"
+          alt="avatar"
+          id="avatar"
+          class="mt-4"
+        />
+        <center>
+          <img
+            src="img/down-chevron.png"
+            alt=""
+            style="height: 50px"
+            class="flecha"
+            onclick="desocultarTodo()"
+          />
+        </center>
+        <br />
+      </div>
 
-        <div id="entrada" class="text-center mt-5">
-            <h1>Desarrollador multiplataforma y desarrollador web =)</h1>
-            <img src="img/avatar.jpg" alt="avatar" id="avatar" class="mt-4">
-            <center>
-                <img src="img/down-chevron.png" alt="" style="height: 50px;" class="flecha" onclick="desocultarTodo()">
-            </center>
-            <br>
-        </div>
+      <!-- <img src="img/desktop.jpg" alt="" class="fondo"> -->
+      <div class="fondodesk">
+        <nav id="menu" class="mt-4 container">
+          <div id="error"></div>
 
-
-        <!-- <img src="img/desktop.jpg" alt="" class="fondo"> -->
-        <div class="fondodesk">
-
-
-            <nav id="menu" class="mt-4 container">
-
-                <div class="row ">
-
-
-                       <!-- &times -->
-                    <div class="col-xs-12 col-sm-6 ">
-                        <button class="ocultar" id="boton"onclick="abrir(this)" >Abrir</button>
-                        <div class="card izquierda reaparecer" style=" min-width: 10rem" >
-                            <a href="html/about.html"onclick = "comprobarRedireccion(event)" style="text-decoration: none;">
-                                <div class="botones">
-
-                                    <div class="boton1"onclick="minimizarMaximizar(this)"></div>
-                                    <div class="boton2" ></div>
-                                    <div class="boton3" onclick="minimizar(this)"></div>
-                                </div>
-                                <div class="card-body">
-                                    <h5 class="card-title text-center">About</h5>
-                                </div>
-                            </a>
-                        </div>
-          
-
-                    </div>
-        
-
-                    <div class="col-xs-12 col-sm-6 ">
-                        <div class="card derecha" style="  min-width: 10rem">
-                            <a href="html/afterWork.html" style="text-decoration: none;">
-                                <div class="botones">
-
-                                    <div class="boton1"></div>
-                                    <div class="boton2"></div>
-                                    <div class="boton3"></div>
-                                </div>
-                                <div class="card-body">
-                                    <h5 class="card-title text-center">After work</h5>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
+          <div class="row">
+            <!-- &times -->
+            <div class="col-xs-12 col-sm-6 opt">
+              <button class="ocultar" id="boton" onclick="abrir(this)">
+                Abrir
+              </button>
+              <div
+                class="card izquierda reaparecer"
+                style="min-width: 10rem"
+                onclick="enlace('about')"
+              >
+                <!-- <a href="html/about.html"onclick = "comprobarRedireccion(event)" style="text-decoration: none;"> -->
+                <div class="botones">
+                  <div class="boton1" onclick="ocultar(this)"></div>
+                  <div class="boton2" onclick="matrix(this)"></div>
+                  <div class="boton3" onclick="minimizar(this)"></div>
                 </div>
-
-                <div class="row ">
-
-
-                    <div class="col-xs-12 col-sm-6">
-                        <div class="card izquierda" style=" min-width: 10rem;">
-                            <a href="html/diw.html" style="text-decoration: none;">
-                                <div class="botones">
-
-                                    <div class="boton1"></div>
-                                    <div class="boton2"></div>
-                                    <div class="boton3"></div>
-                                </div>
-                                <div class="card-body">
-                                    <h5 class="card-title text-center">DIW</h5>
-                                </div>
-
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="col-xs-12 col-sm-6">
-                        <div class="card derecha" style=" min-width: 10rem">
-                            <a href="html/projects.html" style="text-decoration: none;">
-                            <div class="botones">
-
-                                <div class="boton1"></div>
-                                <div class="boton2"></div>
-                                <div class="boton3"></div>
-                            </div>
-                            <div class="card-body">
-                                <h5 class="card-title text-center">Projects</h5>
-                            </div>
-                            </a>
-                        </div>
-                    </div>
+                <div class="card-body">
+                  <h5 class="card-title text-center">About</h5>
                 </div>
-            </nav>
+                <!-- </a> -->
+              </div>
+            </div>
 
-        </div>
-        <footer>
-            <!-- <p class="creditos"><a href="https://www.freepik.es/vector-gratis/hacker-que-opera-ilustracion-icono-historieta-ordenador-portatil-concepto-icono-tecnologia-aislado-estilo-dibujos-animados-plana_11602236.htm#page=2&query=developer&position=17&from_view=search&track=sph">Imagen de catalyststuff</a> en Freepik</p> -->
-        </footer>
+            <div class="col-xs-12 col-sm-6 opt">
+              <div
+                class="card derecha"
+                style="min-width: 10rem"
+                onclick="enlace('afterWork')"
+              >
+                <div class="botones">
+                  <div class="boton1" onclick="ocultar(this)"></div>
+                  <div class="boton2" onclick="matrix(this)"></div>
+                  <div class="boton3" onclick="minimizar(this)"></div>
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title text-center">After work</h5>
+                </div>
+              </div>
+            </div>
+          </div>
 
+          <div class="row">
+            <div class="col-xs-12 col-sm-6 opt">
+              <div
+                class="card izquierda"
+                style="min-width: 10rem"
+                onclick="enlace('diw')"
+              >
+                <div class="botones">
+                  <div class="boton1" onclick="ocultar(this)"></div>
+                  <div class="boton2" onclick="matrix(this)"></div>
+                  <div class="boton3" onclick="minimizar(this)"></div>
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title text-center">DIW</h5>
+                </div>
+              </div>
+            </div>
 
+            <div class="col-xs-12 col-sm-6">
+              <div
+                class="card derecha"
+                style="min-width: 10rem"
+                onclick="enlace('projects')"
+              >
+                <div class="botones">
+                  <div class="boton1" onclick="ocultar(this)"></div>
+                  <div class="boton2" onclick="matrix(this)"></div>
+                  <div class="boton3" onclick="minimizar(this)"></div>
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title text-center">Projects</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+      <footer>
+        <!-- <p class="creditos"><a href="https://www.freepik.es/vector-gratis/hacker-que-opera-ilustracion-icono-historieta-ordenador-portatil-concepto-icono-tecnologia-aislado-estilo-dibujos-animados-plana_11602236.htm#page=2&query=developer&position=17&from_view=search&track=sph">Imagen de catalyststuff</a> en Freepik</p> -->
+      </footer>
     </div>
-     <script src="js/animacion.js"></script> 
+    <script src="js/animacion.js"></script>
     <script>
-        //  document.querySelectorAll("*").forEach(function(elemento){elemento.style.border="1px solid red"})
+      //  document.querySelectorAll("*").forEach(function(elemento){elemento.style.border="1px solid red"})
     </script>
-</body>
-
+  </body>
 </html>
