@@ -50,7 +50,10 @@
           <p>Por último, quería aprender una nueva tecnología y gracias a la idea de que fuera una aplicación híbrida he tenido la necesidad de usar en este caso Ionic.</p>
         <br>
         <br>
-        <button class="button-17" role="button">TFG completo</button>
+        <div class="text-center">
+
+            <button class="button-17" role="button" onclick="verPdf()">TFG completo</button>
+        </div>
         <!-- HTML !-->
 
 
@@ -64,6 +67,9 @@
       
 
     <script>
+        function verPdf(){
+            location.href="../archivos/memoriaTFC.pdf"
+        }
       //  document.querySelectorAll("*").forEach(function(elemento){elemento.style.border="1px solid red"})
     </script>
     <script src="../js/general.js"></script>
